@@ -5,7 +5,7 @@ The Admin manages the entire website.
 # Documentaion
 The following folder contains:
 - Project description
-- Project Presenation
+- Project presenation
 - Screenshots of the website
 - ERD
 - Use-Case Diagram
