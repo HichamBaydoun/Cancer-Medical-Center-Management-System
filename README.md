@@ -1,8 +1,9 @@
 This website was developed using HTML, CSS, JavaScript, PHP, MySQL
 ### Brief Description
-I wanted to create a website to help cancer patients in their treatment journey by simplifying the access to their medical reports and information, and by creating an easy appointment scheduling system  so that the patient can access everything from home.
-Moreover, Doctors can record notes about a patient’s medical condition (diagnosis), upload reports and manage their patients online without the need of physical papers that may be lost.
-The Admin manages the website in an efficient, simple, and easy manner.
+I wanted to create a website to help cancer patients in their treatment journey by simplifying the access to their medical reports and information, and by creating an easy appointment scheduling system  so that the patient can access everything from home.\
+Moreover, Doctors can record notes about a patient’s medical condition (diagnosis), upload reports and manage their patients online without the need of physical papers that may be lost.\
+The Admin manages the website in an efficient, simple, and easy manner.\
+I also added a feature where people can volunteer and donate to the medical center in order to support the and their cause.
 More information can be found in the documentation where every user action is explained in details.
 ### Folders
 - Frontend: 
