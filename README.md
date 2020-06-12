@@ -13,4 +13,4 @@ The following folder contains:
 # Cancer_Medical_Center
 The following folder contains:
 - databse .sql file
-- code which is divided into 2 folders: Frontend (contains code of home pages, patient, and doctor) and Backend (contains code of admin)
+- the code which is divided into 2 folders: Frontend (contains code of home pages, patient, and doctor) and Backend (contains code of admin)
