@@ -1,0 +1,158 @@
+<style>
+	body {
+		height: 1400px;
+		background-image: linear-gradient(white, grey, grey);
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0 auto;
+		padding: 0px;
+	}
+
+	#apDiv1 {
+		position: absolute;
+		width: 1070px;
+		height: 1197px;
+		z-index: 1;
+		left: 142px;
+		top: 9px;
+		color: #CCC;
+		background-color: white;
+		border: 5px solid #2e3196;
+	}
+
+	#apDiv2 {
+		position: absolute;
+		width: 1071px;
+		height: 119px;
+		z-index: 1;
+		left: 0px;
+		top: -1px;
+		color: #D6D6D6;
+		background-color: #FFFFFF;
+		;
+	}
+
+	#apDiv4 {
+		position: absolute;
+		width: 151px;
+		height: 120px;
+		z-index: 2;
+		background-image: url(Image/logo.png);
+		background-repeat: no-repeat;
+	}
+
+	#apDiv5 {
+		position: absolute;
+		width: 785px;
+		height: 74px;
+		z-index: 1;
+		left: 157px;
+		top: 27px;
+		font-size: 45px;
+		color: black;
+		font-weight: bold;
+	}
+
+	#apDiv6 {
+		position: absolute;
+		width: 1071px;
+		height: 53px;
+		z-index: 3;
+		top: 118px;
+		background-color: #2e3196;
+		font-weight: bold;
+		color: #FFF;
+		left: 0px;
+	}
+
+	#apDiv6 div:hover a {
+		display: block;
+		background-color: red;
+		border: 11px solid red;
+	}
+
+	#apDiv6 div:hover {
+		background-color: red;
+	}
+
+	a:link {
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		font-size: 21px;
+	}
+
+	#apDiv20 {
+		position: absolute;
+		width: 148px;
+		height: 32px;
+		z-index: 6;
+		left: 947px;
+		top: 85px;
+		font-family: courier, monospace;
+		text-align: center;
+		color: black;
+		font-size: 20px;
+	}
+</style>
+<div id="apDiv2">
+	<div id="apDiv4"></div>
+	<div id="apDiv5">
+		<div align="left">Daisy Cancer Medical Center <img src="Image/ribbon.png" align="top"></div>
+	</div>
+</div>
+<div id="apDiv6">
+	<table width="1071" height="54" border="0">
+		<tr>
+			<td width="145">
+				<div align="center" id="ap6"><a href="index.php">Home</a></div>
+			</td>
+			<td width="234">
+				<div align="center"><a href="patient.php">Patients</a></div>
+			</td>
+			<td width="183">
+				<div align="center"><a href="doctor.php">Doctors</a></div>
+			</td>
+			<td width="178">
+				<div align="center"><a href="../Backend/Admin.php">Admin</a></div>
+			</td>
+			<td width="188">
+				<div align="center"><a href="volunteer.php">Volunteer</a></div>
+			</td>
+			<td width="178">
+				<div align="center"><a href="donate.php">Donate</a></div>
+			</td>
+			<td width="178">
+				<div align="center"><a href="contact.php">Contact us</a></div>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="apDiv20">
+	<script>
+		var meridiem = "PM";
+		if (hours > 12) {
+			hours = hours - 12;
+			meridiem = "AM";
+		}
+		if (hours === 0) {
+			hours = 12;
+		}
+
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('apDiv14').innerHTML = h + ":" + m + ":" + s + " " + meridiem;
+			var t = setTimeout(function () { startTime() }, 500);
+		}
+
+		function checkTime(i) {
+			if (i < 10) { i = "0" + i };
+			return i;
+		}
+	</script>
+
+</div>
