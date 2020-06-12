@@ -1,0 +1,281 @@
+<html>
+
+<head>
+	<title>Administrator</title>
+	<style>
+		body {
+			height: 1400px;
+			background: linear-gradient(gray, black, black);
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0 auto;
+			padding: 0px;
+		}
+
+		#apDiv1 {
+			position: absolute;
+			width: 1070px;
+			height: 1197px;
+			left: 142px;
+			top: 9px;
+			color: #CCC;
+			background-color: white;
+			border: 5px solid #202124;
+		}
+
+		#apDiv2 {
+			position: absolute;
+			width: 1071px;
+			height: 119px;
+			z-index: 1;
+			left: 0px;
+			top: -1px;
+			color: #D6D6D6;
+			background-color: #FFFFFF;
+		}
+
+		#apDiv3 {
+			position: absolute;
+			width: 785px;
+			height: 74px;
+			z-index: 1;
+			left: 157px;
+			top: 27px;
+			font-size: 45px;
+			color: black;
+			font-weight: bold;
+		}
+
+		#apDiv4 {
+			position: absolute;
+			width: 151px;
+			height: 120px;
+			z-index: 2;
+			top: -1px;
+			background-image: url(../Frontend/Image/logo.png);
+			background-repeat: no-repeat;
+		}
+
+		#apDiv5 {
+			position: absolute;
+			width: 1071px;
+			height: px;
+			z-index: 3;
+			top: 118px;
+			background-color: #202124;
+			font-weight: bold;
+			color: #FFF;
+			left: 0px;
+		}
+
+		#apDiv5 td div {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 21px;
+		}
+
+		#apDiv6 {
+			position: absolute;
+			width: 448px;
+			height: 208px;
+			z-index: 3;
+			left: 323px;
+			top: 320px;
+			background-color: #202124;
+			font-size: 28px;
+			color: white;
+			display: block;
+			line-height: 1.4;
+		}
+
+		#apDiv7 {
+			position: absolute;
+			width: 448px;
+			height: 65px;
+			z-index: 4;
+			left: 323px;
+			top: 208px;
+			font-size: 36px;
+			color: white;
+			background-color: #202124;
+			margin-top: 50px;
+		}
+
+		#form1 tr {
+			margin: 0 0 10px 0;
+		}
+
+		#form1 tr {
+			margin: 0 0 10px 0;
+		}
+
+		#form1 tr:last-child {
+			margin: 0;
+		}
+
+		#form1 tr input[type="text"] {
+			width: 215px;
+			padding: 5px 8px;
+			font-size: 18px;
+			color: #666;
+			border: none;
+			background-image: -webkit-gradient(linear, » 0% 0%, 0% 12%, from(#999), to(#fff));
+			background-image: -moz-linear-gradient(0% 12% » 90deg, #fff, #999);
+			background-color: #fff;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-o-border-radius: 4px;
+			border-radius: 4px;
+		}
+
+		#form1 tr input[type="password"] {
+			width: 215px;
+			padding: 5px 8px;
+			font-size: 18px;
+			color: #666;
+			border: none;
+			background-image: -webkit-gradient(linear, » 0% 0%, 0% 12%, from(#999), to(#fff));
+			background-image: -moz-linear-gradient(0% 12% » 90deg, #fff, #999);
+			background-color: #fff;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-o-border-radius: 4px;
+			border-radius: 4px;
+		}
+
+		#form1 input[type="submit"] {
+			padding: 5 10 5 10;
+			font-weight: bold;
+			font-size: 18px;
+			background-color: #00FF00;
+			border: 2px solid white;
+			cursor: pointer;
+		}
+
+		#form1 input[type="text"]:focus {
+			-webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+			-moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+			box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+		}
+
+		#form1 input[type="text"]:focus {
+			-moz-animation-name: pulse;
+			-moz-animation-duration: 1.5s;
+			-moz-animation-iteration-count: infinite;
+			-moz-animation-timing-function: ease-in-out;
+		}
+
+		#form1 input[type="password"]:focus {
+			-webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.8);
+			-moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.8);
+			box-shadow: 0 0 12px rgba(51, 204, 255, 0.8);
+		}
+
+		#form1 input[type="password"]:focus {
+			-moz-animation-name: pulse;
+			-moz-animation-duration: 1.5s;
+			-moz-animation-iteration-count: infinite;
+			-moz-animation-timing-function: ease-in-out;
+		}
+
+		#apDiv1 #apDiv6 #form1 table tr td div b {
+			font-size: 24px;
+			color: white;
+		}
+
+		#form2 input[type="submit"] {
+			margin-top: 15px;
+			padding: 5 10 5 10;
+			font-weight: bold;
+			background-color: yellow;
+			color: white border: 2px solid black;
+			cursor: pointer;
+		}
+
+		#apDiv3 .admin {
+			position: absolute;
+			font-size: 15px;
+			left: 610px;
+		}
+	</style>
+	<script language="javascript">
+		function validate() {
+			var a = document.f1.uname.value;
+			var b = document.f1.pass.value;
+			if (a == "") {
+				alert("Username Not Entered");
+				return false;
+			}
+			if (b == "") {
+				alert("Password Not Entered");
+				return false;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="apDiv1">
+		<div id="apDiv2">
+			<div id="apDiv3">
+				<div align="left">Daisy Cancer Medical Center <img src="../Frontend/Image/ribbon.png" align="top"></div>
+				<div align="left" class="admin">Administation</div>
+			</div>
+		</div>
+		<div id="apDiv4"></div>
+		<div id="apDiv5">
+			<table width="1071" height="54" border="0">
+				<tr>
+					<td width="450">
+						<div align="center" id="ap6">This page is only for administrator use only</div>
+					</td>
+					<td height="51" colspan="3">
+						<div align="center">
+							<form action="../Frontend/index.php" id="form2">
+								<input type="submit" name="back" id="back" value="Exit Page" />
+							</form>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="apDiv6">
+			<form id="form1" name="f1" method="post" action="logincheck.php">
+				<table width="452" border="0">
+					<tr>
+						<td width="183" height="75">
+							<div align="right"><b>Username</b></div>
+						</td>
+						<td width="15">&nbsp;</td>
+						<td width="182"><label for="textfield"></label>
+							<input type="text" name="uname" id="textfield" /></td>
+					</tr>
+					<tr>
+						<td height="51">
+							<div align="right"><b>Password</b></div>
+						</td>
+						<td>&nbsp;</td>
+						<td><label for="textfield2"></label>
+							<input type="password" name="pass" id="textfield2" /></td>
+					</tr>
+					<tr>
+						<td height="51" colspan="3">
+							<div align="center">
+								<input type="submit" name="button" id="button" value="Login"
+									onClick="return(validate())" />
+							</div>
+						</td>
+						<td width="10">&nbsp;</td>
+						<td width="40">&nbsp;</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="apDiv7">
+			<div align="center">Administrator</div>
+			<hr />
+		</div>
+	</div>
+</body>
+
+</html>
