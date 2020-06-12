@@ -1,4 +1,4 @@
-This website was developed using HTML, CSS, JavaScript, PHP, MySQL
+This website was developed using HTML, CSS, JavaScript, PHP, MySQL.
 ### Brief Description
 I wanted to create a website to help cancer patients in their treatment journey by simplifying the access to their medical reports and information, and by creating an easy appointment scheduling system  so that the patient can access everything from home.\
 Moreover, Doctors can record notes about a patient’s medical condition (diagnosis), upload reports and manage their patients online without the need of physical papers that may be lost.\
